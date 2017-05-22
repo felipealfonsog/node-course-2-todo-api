@@ -52,7 +52,6 @@ UserSchema.methods.generateAuthToken = function () {
   });
 };
 
-// jsldkfjsa ñlf lj
 UserSchema.methods.removeToken = function (token) {
   var user = this;
 
