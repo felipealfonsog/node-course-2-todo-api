@@ -262,7 +262,7 @@ describe('POST /users/login', () => {
         expect(res.headers['x-auth']).toExist();
       })
       .end((err, res) => {
-        if (err) {
+        if (err) {00
           return done(err);
         }
 
