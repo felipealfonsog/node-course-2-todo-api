@@ -245,10 +245,6 @@ describe('POST /users', () => {
   });
 });
 
-
-
-// jsdfh alskjfhl
-
 describe('POST /users/login', () => {
   it('should login user and return auth token', (done) => {
     request(app)
@@ -262,7 +258,7 @@ describe('POST /users/login', () => {
         expect(res.headers['x-auth']).toExist();
       })
       .end((err, res) => {
-        if (err) {00
+        if (err) {
           return done(err);
         }
 
@@ -275,9 +271,6 @@ describe('POST /users/login', () => {
         }).catch((e) => done(e));
       });
   });
-
-
-
 
   it('should reject invalid login', (done) => {
     request(app)
